@@ -1,0 +1,32 @@
+
+An accordion is a perfect solution, if you’re struggling with too much content on a web page. Accordion menus can be expand and collapse when needed.
+
+This gives people control over what to read, and when, which can enhance their user experience.
+
+When to use an Accordion:
+1. If your page contains lot of content, then an accordion can help them more easily and efficiently find the information they’re looking for.
+2. It also helps user when they view the webpage from small screen like a mobile device, then it can give an overview about the webpage and reduce how much they need to scroll.
+
+When not to use an Accordion:
+1. If all content in the webpage are useful for the user or if we need to reveal all the content to the user then forcing the user to open all the accordion is not a good idea.
+2. Accordions are additional development effort, we can avoid this and use plain text if we don't have enough budget or support during development.
+
+HTML:
+
+    Headers:
+    Accordion headers contain section titles. They are descriptive enough to indicate about the panel content.
+
+    Panel:
+    Panels have content related to the headers. By default the panels are in hidden state, it will be shown once we click the accordion headers.
+
+    Icons
+    Icons, which typically appear to the left or right of the section titles, indicate there’s more content available if clicked. These icons might be an arrow pointing down or to the right, a caret, a plus sign, or a chevron pointing down, among others.
+
+CSS:
+    The height of the panel is set to maximum of height 0 pixel(height: 0px).
+    The CSS overflow property controls an an element or area if it has too large content. The overflow: hidden property hide the content if it exceeds the height of the element. There are also other values such as visible, auto, scroll for different usage.
+    The CSS transition property which gives the animation effect while doing expand/collapse(transition: height 0.4s ease-out). Here the animation is given for the height property and time taken for the animation is 0.4s and the animation effect is ease-out.
+
+JS:
+    nextElementSibling - The nextElementSibling property used to return the immediate next element of the specified element under the same parent. It will return null if the specified element is the last one in the parent. It is a readonly property.
+    scrollHeight - The scrollHeight property used to return the height of the element including the height of the padding and content even if it is not visible due to overflow property, but not includes border, margin or scrollbar. It is readonly property.

@@ -1,0 +1,39 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+/* COMMON STYLES ENDS */
+
+
+.iconBarContainer {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.iconBarContainer a {
+    width: 20%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    text-align: center;
+    float: left;
+}
+
+.iconBarContainer a:hover {
+    background-color: #000;
+}
+
+.iconBarContainer .active {
+    background-color: #04AA6D;
+}
+
+.iconBarContainer a img {
+    margin: 20px;
+}

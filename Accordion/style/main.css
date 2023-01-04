@@ -1,0 +1,56 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+body {
+    height: 100vh;
+}
+/* COMMON STYLES ENDS */
+
+/* Sets the width of the accordion container */
+.container {
+    width: 50%;
+}
+
+/* Sets the style for the accordion header */
+.container .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    padding: 18px;
+    text-align: left;
+    border: none;
+}
+
+/* Sets the style of the accordion panel with max-height 0px and animation effect included */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease-out;
+}
+
+
+/* Sets the headers icon */
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 11px;
+    color: #777;
+    float: right;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}

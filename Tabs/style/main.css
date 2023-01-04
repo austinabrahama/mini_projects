@@ -1,0 +1,68 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+body {
+    height: 100vh;
+}
+/* COMMON STYLES ENDS */
+
+/* Sets the width of the container */
+.container {
+    width: 50%;
+}
+
+/* Sets the style for the tabs */
+.container .tabs {
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #764abc;
+    color: #000;
+}
+
+.container .tabs button {
+    float: left;
+    border: none;
+    outline: none;
+    background-color: #e3daf1;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.container .tabs .button:hover {
+    background-color: #c7b5e3;
+    color: #000;
+}
+
+.container .tabs .button.active {
+    background-color: #764abc;
+    color: #fff;
+}
+
+.container .panes .content {
+    border: 1px solid #764abc;
+    border-top: none;
+    display: none;
+    padding: 6px 12px;
+    animation: content-animate 1.5s;
+}
+
+.container .panes .content.active {
+    display: block;
+}
+
+@keyframes content-animate {
+    from { opacity:0; }
+    to { opacity:1; }
+}

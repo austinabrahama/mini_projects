@@ -1,0 +1,43 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+/* COMMON STYLES ENDS */
+
+
+.menuIconContainer {
+    margin: 50px;
+    cursor: pointer;
+}
+
+.menuIconContainer .lines {
+    background: #000;
+    height: 5px;
+    width: 30px;
+    margin-bottom: 5px;
+    border-radius: 1px;
+    transition: all 0.5s ease;
+}
+
+.menuIconContainer.active .lines{
+    transform-origin: 30%;
+}
+
+.menuIconContainer.active #line2 {
+    display: none;
+}
+
+.menuIconContainer.active #line1 {
+    transform: rotate(50deg);
+}
+
+.menuIconContainer.active #line3 {
+    transform: rotate(-50deg);
+}
