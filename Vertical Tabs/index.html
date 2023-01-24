@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+   		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style/main.css">
+		<title>Accordion</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="tabs">
+				<button class="button" onclick="showContent(event, 'red')" id="redBtn">Red</button>
+				<button class="button" onclick="showContent(event, 'green')">Green</button>
+				<button class="button" onclick="showContent(event, 'blue')">Blue</button>
+			</div>
+			<div class="panes">
+				<section class="content" id="red">
+					<h3>Red</h3>
+					<p>Since red is the color of blood, it has historically been associated with sacrifice, danger, and courage.</p>
+				</section>
+				<section class="content" id="green">
+					<h3>Green</h3>
+					<p>Green is the color between cyan and yellow on the visible spectrum. It is evoked by light which has a dominant wavelength.</p>
+				</section>
+				<section class="content" id="blue">
+					<h3>Blue</h3>
+					<p>Blue is one of the three primary colours in the RYB colour model (traditional colour theory), as well as in the RGB (additive) colour model.</p>
+				</section>
+			</div>
+		</div>
+	</body>
+	<script src="js/main.js"></script>
+</html>
