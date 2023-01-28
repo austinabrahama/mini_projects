@@ -1,0 +1,60 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+/* COMMON STYLES ENDS */
+
+.container {
+    width: 100%;
+    color: #000;
+}
+
+.container .left {
+    border: 2px solid #764abc;
+    background-color: #c7b5e3;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+}
+
+.container .right {
+    border: 2px solid #764abc;
+    border-left: none;
+    background-color: #e3daf1;
+    margin-left: 200px;
+}
+
+.container .left li {
+    list-style: none;
+}
+
+.container .left a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+.container .left a:hover {
+    background-color: #eee;
+}
+
+.container .left a {
+    padding: 15px;
+}
+
+.container .right p {
+    padding: 15px;
+}
+
+.container .right h2 {
+    padding: 35px 15px 15px 15px;
+}
