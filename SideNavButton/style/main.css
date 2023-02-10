@@ -1,0 +1,65 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+/* COMMON STYLES ENDS */
+
+h1 {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.sideNav {
+    height: 100%;
+    position: relative;
+}
+
+.sideNav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 15px;
+    width: 120px;
+    position: absolute;
+    transition: left 1s ease;
+    left: -75px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.sideNav a#html {
+    background-color: #04AA6D;
+    top: 20px;
+}
+
+.sideNav a#css {
+    background-color: #2196F3;
+    top: 100px;
+}
+
+.sideNav a#javascript {
+    background-color: #f44336;
+    top: 180px;
+}
+
+.sideNav a#ember {
+    background-color: #555;
+    top: 260px;
+}
+
+.sideNav a#java {
+    background-color: #764abc;
+    top: 340px;
+}
+
+.sideNav a:hover {
+    left: 0;
+}
