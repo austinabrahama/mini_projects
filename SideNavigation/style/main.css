@@ -1,0 +1,88 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+/* COMMON STYLES ENDS */
+
+
+.menuIconContainer {
+    margin: 50px;
+    cursor: pointer;
+}
+
+.menuIconContainer .lines {
+    background: #000;
+    height: 5px;
+    width: 30px;
+    margin-bottom: 5px;
+    border-radius: 1px;
+    transition: all 0.5s ease;
+}
+
+.menuIconContainer.active .lines{
+    transform-origin: 30%;
+}
+
+.menuIconContainer.active #line2 {
+    display: none;
+}
+
+.menuIconContainer.active #line1 {
+    transform: rotate(50deg);
+}
+
+.menuIconContainer.active #line3 {
+    transform: rotate(-50deg);
+}
+
+.sideNav {
+    border: 2px solid #764abc;
+    background-color: #c7b5e3;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: -200px;
+    transition: left 1s ease;
+}
+
+.sideNav li {
+    list-style: none;
+}
+
+.sideNav li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 15px;
+}
+
+.sideNav li:first-child a {
+    cursor: default;
+}
+
+.sideNav li:first-child a span {
+    cursor: pointer;
+}
+
+.sideNav li a:hover {
+    background-color: #eee;
+}
+
+.sideNav .closeBtn {
+    text-align: right;
+    font-size: 30px;
+}
+
+.sideNav.active {
+    left: 0px;
+}
