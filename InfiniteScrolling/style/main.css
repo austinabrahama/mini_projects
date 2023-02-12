@@ -1,0 +1,72 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+/* COMMON STYLES ENDS */
+
+h1 {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    max-height: 650px;
+}
+
+.container .scroller {
+    height: 200px;
+    background-color: #888;
+    margin-bottom: 20px;
+}
+
+
+.jumpLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    opacity: 0;
+}
+
+.jumpLoader.show {
+    opacity: 1;
+}
+
+.jumpLoader .balls {
+    width: 15px;
+    height: 15px;
+    background-color: #222;
+    border-radius: 50%;
+    margin-left: 10px;
+    animation: jump 0.5s ease-in infinite;
+}
+
+.jumpLoader .balls:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+
+.jumpLoader .balls:nth-of-type(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
