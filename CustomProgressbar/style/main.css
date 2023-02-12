@@ -1,0 +1,47 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+/* COMMON STYLES ENDS */
+
+h1 {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    position: absolute;
+    top: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    width: 300px;
+    background-color: #d8d8c8;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.progress-done {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 0;
+    background-image: linear-gradient(to left, #f2709c, #ff9472);
+    box-shadow: 0 3px 3px -5px #f2709c, 0 2px 4px #f2709c;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+}
