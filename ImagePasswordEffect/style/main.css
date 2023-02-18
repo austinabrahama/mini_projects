@@ -1,0 +1,57 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+/* COMMON STYLES ENDS */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-image: url(../images/boat.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(20px);
+}
+
+.formContainer {
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #888;
+    z-index: 10;
+}
+
+.formContainer h1 {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.formContainer label + input {
+    display: block;
+    padding: 10px;
+}
+
+.formContainer input {
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 4px;
+}
