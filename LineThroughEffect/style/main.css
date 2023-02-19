@@ -1,0 +1,51 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+/* COMMON STYLES ENDS */
+
+body {
+    background-color: #81B7E5;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    width: 100vw;
+    font-size: 70px;
+    text-align: center;
+}
+
+.line {
+    height: 20px;
+    width: 3vw;
+    background-color: #fff;
+    border-radius: 0px 15px 15px 0px;
+    animation: draw 3s linear forwards;
+    z-index: 2;
+}
+
+h1, .line {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes draw {
+    to {
+        width: 101vw;
+    }
+}
+
+.overlay {
+    z-index: 3;
+}
