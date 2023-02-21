@@ -39,10 +39,8 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: all 0.5s ease;
+    position: relative;
 }
 
 #red.active {
@@ -60,9 +58,14 @@ body {
     box-shadow: 1px 1px 12px 4px #63B86A;
 }
 
-.lights div {
+
+.lights::after {
+    content: '';
     width: 30px;
     height: 30px;
+    border-right: 3px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
-    box-shadow: inset -2px 0px 1px 1px rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
