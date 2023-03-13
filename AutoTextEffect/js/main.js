@@ -12,4 +12,4 @@ function contentEffect() {
     }
 }
 
-setInterval(contentEffect, 1000);
+setInterval(contentEffect, 100);
