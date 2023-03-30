@@ -1,0 +1,65 @@
+/* COMMON STYLES STARTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+/* COMMON STYLES ENDS */
+
+body {
+    /* background-color: #81B7E5; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    padding: 50px 200px;
+}
+
+.getMealContainer {
+    line-height: 50px;
+}
+
+.getMealContainer h1 {
+    font-size: 35px;
+}
+
+.getMealContainer div {
+    font-size: 25px;
+}
+
+.getMealContainer button {
+    background-color: #81B7E5;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+#mealContainer {
+    margin: 20px 0px;
+}
+
+.headContainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%
+}
+
+.headContainer .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+}
+
+.headContainer .grid-item img {
+    max-width: 100%;
+}
